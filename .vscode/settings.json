@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/src/cyglidar_d1",
+    "cmake.configureOnOpen": true
+}

@@ -1,0 +1,2 @@
+stat_analysis
+-DCATKIN_DEVEL_PREFIX=/home/jetson/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jetson/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=stat_analysis -G Unix Makefiles

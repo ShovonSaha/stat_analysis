@@ -1,0 +1,136 @@
+Help on class PointCloud_PointXYZRGBA in module pcl._pcl:
+
+class PPooiinnttCClloouudd__PPooiinnttXXYYZZRRGGBBAA(builtins.object)
+ |  Represents a cloud of points in 3-d space.
+ |  
+ |  A point cloud can be initialized from either a NumPy ndarray of shape
+ |  (n_points, 3), from a list of triples, or from an integer n to create an
+ |  "empty" cloud of n points.
+ |  
+ |  To load a point cloud from disk, use pcl.load.
+ |  
+ |  Methods defined here:
+ |  
+ |  ____ggeettiitteemm____(self, key, /)
+ |      Return self[key].
+ |  
+ |  ____rreedduuccee____(...)
+ |      PointCloud_PointXYZRGBA.__reduce__(self)
+ |  
+ |  ____rreepprr____(self, /)
+ |      Return repr(self).
+ |  
+ |  eexxttrraacctt(...)
+ |      PointCloud_PointXYZRGBA.extract(self, pyindices, bool negative=False)
+ |      
+ |      Given a list of indices of points in the pointcloud, return a 
+ |      new pointcloud containing only those points.
+ |  
+ |  ffrroomm__aarrrraayy(...)
+ |      PointCloud_PointXYZRGBA.from_array(self, ndarray arr)
+ |      
+ |      Fill this object from a 2D numpy array (float32)
+ |  
+ |  ffrroomm__ffiillee(...)
+ |      PointCloud_PointXYZRGBA.from_file(self, char *f)
+ |      
+ |      Fill this pointcloud from a file (a local path).
+ |      Only pcd files supported currently.
+ |      
+ |      Deprecated; use pcl.load instead.
+ |  
+ |  ffrroomm__lliisstt(...)
+ |      PointCloud_PointXYZRGBA.from_list(self, _list)
+ |      
+ |      Fill this pointcloud from a list of 4-tuples
+ |  
+ |  ggeett__ppooiinntt(...)
+ |      PointCloud_PointXYZRGBA.get_point(self, npy_intp row, npy_intp col)
+ |      
+ |      Return a point (3-tuple) at the given row/column
+ |  
+ |  mmaakkee__kkddttrreeee__ffllaannnn(...)
+ |      PointCloud_PointXYZRGBA.make_kdtree_flann(self)
+ |      
+ |      Return a pcl.kdTreeFLANN object with this object set as the input-cloud
+ |      
+ |      Deprecated: use the pcl.KdTreeFLANN constructor on this cloud.
+ |  
+ |  mmaakkee__mmoovviinngg__lleeaasstt__ssqquuaarreess(...)
+ |      PointCloud_PointXYZRGBA.make_moving_least_squares(self)
+ |      
+ |      Return a pcl.MovingLeastSquares object with this object as input cloud.
+ |  
+ |  mmaakkee__ppaasssstthhrroouugghh__ffiilltteerr(...)
+ |      PointCloud_PointXYZRGBA.make_passthrough_filter(self)
+ |      
+ |      Return a pcl.PassThroughFilter object with this object set as the input-cloud
+ |  
+ |  mmaakkee__sseeggmmeenntteerr(...)
+ |      PointCloud_PointXYZRGBA.make_segmenter(self)
+ |      
+ |      Return a pcl.Segmentation object with this object set as the input-cloud
+ |  
+ |  mmaakkee__sseeggmmeenntteerr__nnoorrmmaallss(...)
+ |      PointCloud_PointXYZRGBA.make_segmenter_normals(self, int ksearch=-1, double searchRadius=-1.0)
+ |      
+ |      Return a pcl.SegmentationNormal object with this object set as the input-cloud
+ |  
+ |  mmaakkee__ssttaattiissttiiccaall__oouuttlliieerr__ffiilltteerr(...)
+ |      PointCloud_PointXYZRGBA.make_statistical_outlier_filter(self)
+ |      
+ |      Return a pcl.StatisticalOutlierRemovalFilter object with this object set as the input-cloud
+ |  
+ |  mmaakkee__vvooxxeell__ggrriidd__ffiilltteerr(...)
+ |      PointCloud_PointXYZRGBA.make_voxel_grid_filter(self)
+ |      
+ |      Return a pcl.VoxelGridFilter object with this object set as the input-cloud
+ |  
+ |  rreessiizzee(...)
+ |      PointCloud_PointXYZRGBA.resize(self, npy_intp x)
+ |  
+ |  ttoo__aarrrraayy(...)
+ |      PointCloud_PointXYZRGBA.to_array(self)
+ |      
+ |      Return this object as a 2D numpy array (float32)
+ |  
+ |  ttoo__ffiillee(...)
+ |      PointCloud_PointXYZRGBA.to_file(self, const char *fname, bool ascii=True)
+ |      Save pointcloud to a file in PCD format.
+ |      
+ |              Deprecated: use pcl.save instead.
+ |  
+ |  ttoo__lliisstt(...)
+ |      PointCloud_PointXYZRGBA.to_list(self)
+ |      
+ |      Return this object as a list of 3-tuples
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  ____nneeww____(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  hheeiigghhtt
+ |      property containing the height of the point cloud
+ |  
+ |  iiss__ddeennssee
+ |      property containing whether the cloud is dense or not
+ |  
+ |  sseennssoorr__oorriieennttaattiioonn
+ |  
+ |  sseennssoorr__oorriiggiinn
+ |  
+ |  ssiizzee
+ |      property containing the number of points in the point cloud
+ |  
+ |  wwiiddtthh
+ |      property containing the width of the point cloud
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  ____ppyyxx__vvttaabbllee____ = <capsule object NULL>
